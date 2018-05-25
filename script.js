@@ -9,6 +9,9 @@ var markerFour = $(".marker-four");
 var openMenu = $("#open-menu");
 var closeMenu = $("#close-menu");
 var menuContainer = $(".menu-container");
+var openContact = $("#open-contact");
+var closeContact = $("#close-contact");
+var contactContainer = $(".contact-container");
 
 startSlideShow()
 
@@ -66,4 +69,13 @@ openMenu.click(function(){
 
 closeMenu.click(function(){
   menuContainer.css("top","-100%").css("opacity","0");
+});
+
+openContact.click(function(){
+  contactContainer.css("top","0").css("opacity",".9");
+  console.log("click");
+});
+
+closeContact.click(function(){
+  contactContainer.css("top","-100%").css("opacity","0");
 });
