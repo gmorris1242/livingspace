@@ -315,7 +315,7 @@ button:hover {
   }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 450px) {
   #title {
     font-size: 40px;
     margin-top: 50px;
@@ -327,5 +327,11 @@ button:hover {
 
   .middle-logo h2 {
     font-size: 20px;
+  }
+
+  .left-contact,
+  .right-contact,
+  .menu-list {
+    margin-top: 150px;
   }
 }
