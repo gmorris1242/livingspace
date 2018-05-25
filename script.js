@@ -1,19 +1,58 @@
 var image = $(".image");
 var index = 1;
 var marker = $(".marker");
+var slideShow;
+var markerOne = $(".marker-one");
+var markerTwo = $(".marker-two");
+var markerThree = $(".marker-three");
+var markerFour = $(".marker-four");
 
-// startSlideShow()
+startSlideShow()
 
 function startSlideShow() {
-  setInterval(function(){
+  slideShow = setInterval(function(){
     if(index < 4) {
-      console.log(index);
       image.eq(index-1).fadeOut();
       image.eq(index).fadeIn();
+      marker.eq(index-1).removeClass("active");
+      marker.eq(index).addClass("active");
       index++
       if(index > 3) {
         index = 0;
       }
     }
   },2000)
-}
+};
+
+markerOne.click(function(){
+  // index = 1;
+  // startSlideShow()
+  image.fadeOut();
+  image.eq(0).fadeIn();
+  marker.removeClass("active");
+  markerOne.addClass("active");
+})
+
+markerTwo.click(function(){
+  clearInterval(slideShow);
+  image.fadeOut();
+  image.eq(1).fadeIn();
+  marker.removeClass("active");
+  markerTwo.addClass("active");
+})
+
+markerThree.click(function(){
+  clearInterval(slideShow);
+  image.fadeOut();
+  image.eq(2).fadeIn();
+  marker.removeClass("active");
+  markerThree.addClass("active");
+})
+
+markerFour.click(function(){
+  clearInterval(slideShow);
+  image.fadeOut();
+  image.eq(3).fadeIn();
+  marker.removeClass("active");
+  markerFour.addClass("active");
+})
