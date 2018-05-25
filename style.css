@@ -2,6 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family:Caviar;
+}
+
+@font-face {
+  font-family:Caviar;
+  src:url(fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family:CaviarBold;
+  src:url(fonts/CaviarDreams_Bold.ttf);
 }
 
 ul {
@@ -15,6 +26,7 @@ a {
 .container {
   height: 100vh;
   width: 100%;
+  background-color: black;
 }
 
 .image {
@@ -22,13 +34,10 @@ a {
   height: 100%;
   position: absolute;
   display: none;
-  background-color: black;
-}
-
-.image img {
-  width: 100%;
-  height: 100%;
-  opacity: .75;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: .55;
 }
 
 .image-one {
@@ -62,14 +71,77 @@ span {
   height: 20px;
 }
 
+.middle-logo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.middle-logo h1{
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.middle-logo h2 {
+  letter-spacing: 5px;
+  margin-top: 20px;
+}
+
+.middle-logo a {
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255,.2);
+  transition: .4s;
+}
+
+.middle-logo a:hover {
+  background-color: white;
+  color: black;
+}
+
 /* NOTE: navbar */
 
 header {
   width: 100%;
+  /* height: 94px; */
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: fixed;
-  z-index: 100;
+  z-index: 200;
+  padding: 15px;
+}
+
+header ul li {
+  cursor: pointer;
+}
+
+nav {
+}
+
+.icon {
+  color: white;
+  font-size: 25px;
+  opacity: .8;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.top-logo {
+  width: 70px;
+  height: auto;
+  /* position: absolute; */
 }

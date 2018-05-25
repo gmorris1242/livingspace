@@ -21,7 +21,7 @@ function startSlideShow() {
         index = 0;
       }
     }
-  },2000)
+  },5000)
 };
 
 markerOne.click(function(){
