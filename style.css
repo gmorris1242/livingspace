@@ -163,7 +163,7 @@ nav {
 .top-logo {
   width: 60px;
   height: auto;
-  opacity: .9;
+  /* opacity: .9; */
   transition: .5s;
 }
 
@@ -249,6 +249,12 @@ nav {
   line-height: 2;
 }
 
+.left-contact h2,
+.right-contact h2 {
+  font-family: CaviarBold;
+  font-size: 30px;
+}
+
 .contact-container form {
   display: flex;
   flex-direction: column;
@@ -274,7 +280,11 @@ nav {
   margin: 10px;
   padding: 20px;
   font-size: 16px;
+  transition: .5s;
+}
 
+button:hover {
+  transform: scale(1.02);
 }
 
 @media screen and (max-width: 515px) {
