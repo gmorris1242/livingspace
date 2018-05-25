@@ -1,3 +1,4 @@
+var body = $("body");
 var image = $(".image");
 var index = 1;
 var marker = $(".marker");
@@ -65,17 +66,21 @@ markerFour.click(function(){
 
 openMenu.click(function(){
   menuContainer.css("top","0").css("opacity",".9");
+  body.css("overflow","hidden");
 });
 
 closeMenu.click(function(){
   menuContainer.css("top","-100%").css("opacity","0");
+  body.css("overflow","auto");
 });
 
 openContact.click(function(){
   contactContainer.css("top","0").css("opacity",".9");
-  console.log("click");
+  body.css("overflow","hidden");
+
 });
 
 closeContact.click(function(){
   contactContainer.css("top","-100%").css("opacity","0");
+  body.css("overflow","auto");
 });
