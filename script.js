@@ -65,22 +65,22 @@ markerFour.click(function(){
 });
 
 openMenu.click(function(){
-  menuContainer.css("top","0").css("opacity",".9");
+  menuContainer.css("top","0").css("opacity",".9").css("z-index","300");
   body.css("overflow","hidden");
 });
 
 closeMenu.click(function(){
-  menuContainer.css("top","-100%").css("opacity","0");
+  menuContainer.css("top","-100%").css("opacity","0").css("z-index","0");
   body.css("overflow","auto");
 });
 
 openContact.click(function(){
-  contactContainer.css("top","0").css("opacity",".9");
+  contactContainer.css("top","0").css("opacity",".9").css("z-index","300");
   body.css("overflow","hidden");
 
 });
 
 closeContact.click(function(){
-  contactContainer.css("top","-100%").css("opacity","0");
+  contactContainer.css("top","-100%").css("opacity","0").css("z-index","0");
   body.css("overflow","auto");
 });
